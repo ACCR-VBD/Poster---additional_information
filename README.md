@@ -53,12 +53,10 @@ As the mosquito population model yields an estimate of the number of mosquitoes 
   <em>Ross-macdonald transmission model of mosquito-borne diseases</em>
 </p>
 
-A crucial metric based on such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection in a fully susceptible population.  Indeed, a $R_0$ under one theoretically ensures that infection events will not lead to a disease outbreak, as the number of new infections progressively dies out. This metric is computed through an equation based on several parameters of the epidemiological compartmental model, as in the following formula :
+A crucial metric based on such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection in a fully susceptible population. This metric is computed through an equation based on several parameters of the epidemiological compartmental model, as in the following formula from the Ross-macdonald model :
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_0=\frac{M}{N}\frac{a(T)^2b(T)c(T)}{gr}" alt="R_0 equation for Ross-Macdonald model">
-  <br>
-  <em>The basic reproduction number (\(R_0\)) in the Ross-Macdonald model.</em>
+  <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_0=\frac{M}{N}\times\frac{a(T)^2b(T)c(T)}{\mu(T)r}e^{-\mu(T)\times\text{EIP(T)}}">
 </p>
 
 Where:
@@ -67,15 +65,17 @@ Where:
 - \(a\) is the daily biting rate per mosquito,
 - \(b\) is the probability of disease transmission from an infectious mosquito to a susceptible human per bite,
 - \(c\) is the probability of disease transmission from an infectious human to a susceptible mosquito per bite,
-- \(g\) is the per capita mortality rate of mosquitoes,
+- \($\mu$\) is the per capita mortality rate of mosquitoes,
 - \(r\) is the recovery rate of humans.
-- 
+- \(EIP\) is the incubation period during which an infected mosquito becomes infectious.
+- T is the temperature
 
 This value has interesting thresholding properties:
 
 1. If \($R_0$ > 1\), each infected individual, on average, infects more than one other person, leading to the potential for an epidemic.
 2. If \($R_0$ < 1\), the disease will eventually die out in the population because each infected individual, on average, infects less than one other person.
 
+The temperature dependance of the parameters of this equation can be estimated by 
 
 # Current state of the project
 
