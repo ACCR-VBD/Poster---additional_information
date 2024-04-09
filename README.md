@@ -30,18 +30,27 @@ The mosquito population model will primarily be based on a compartmental model o
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/9f1dcf31-c9d3-4a22-9009-d66fc36b8ba1" width=600>
 </p>
 
-Each species has specific climate- and human demography dependent parameters for the modelisation of the mosquito life cycle. Those parameters are based on either laboratory experiement, such as the temperature-dependant mortality, or expert knowledge, such as the overwintering pattern.
+Each species has specific climate- and human demography dependent parameters for the modelisation of the mosquito life cycle. Those parameters are based on either laboratory experiment, such as the temperature-dependant mortality, or expert knowledge, such as the overwintering pattern.
 
-However, this model
+We get ... this model can only use variable explicitly linked to the life cycle. However, some variables such as land-use and elevation, which are known to significantly impact the species distribution, are difficult to implement in this framework.
 
-Neithertheless, the modelisation of the life stages yields egg abundance estimates, and the most straightforward and scalable method for monitoring mosquito populations is precisely the recording of egg layed in traps. When available, this data allows us to construct a statistical model which straight
+Neithertheless, the modelisation of the life stages yields egg abundance estimates, and the most straightforward and scalable method for monitoring mosquito populations is precisely the recording of egg layed in traps. When available, this data allows us to construct a statistical model which would correct for bias in the egg estimates and straightforwardly implement relevant variable. Combining the two methodology allows us to project egg abundance, which allows to improve the gridded adult population estimates 
 
-
-combining the two methodology allows to project egg abundance, which allows to improve the gridded adult population estimates 
+<p align="center">
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/5d770b36-a17b-4480-9000-7836701aba05" width=500>
+  <br>
+  <em>Schematic representation of the different modules involved in the disease risk model</em>
+</p>
 
 ### Disease risk model
 
-As the mosquito population model 
+As the mosquito population model yields an estimate of the number of mosquitoes likely to bite humans, and by adding human demographic projection, we are able to model the transmision dynamic of specific mosquito-borne diseases using the framework of epidemiological models
+
+<p align="center">
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/5d770b36-a17b-4480-9000-7836701aba05" width=500>
+  <br>
+  <em>Schematic representation of the different modules involved in the disease risk model</em>
+</p>
 
 # Current state of the project
 
