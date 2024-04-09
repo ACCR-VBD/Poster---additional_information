@@ -24,17 +24,17 @@ The demographic projection inputs consists of two models :
 
 ### Mosquito population model
 
-The mosquito population model will primarily be based on a compartmental model of the different life stages of relevant mosquito, with parameters defining the dynamics of the compartment. Here is a diagram from ([Metelmann et al., 2019](https://royalsocietypublishing.org/doi/10.1098/rsif.2018.0761)) illustrating this concept :
+The mosquito population model will primarily be based on a compartmental model of the different life stages of relevant mosquito, with parameters defining the dynamics of the compartment. Here is a diagram from ([Metelmann et al., 2019](https://royalsocietypublishing.org/doi/10.1098/rsif.2018.0761)) illustrating this concept for Aedes albopictus :
 
 <p align="center">
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/9f1dcf31-c9d3-4a22-9009-d66fc36b8ba1" width=600>
 </p>
 
-Each mosquito species has specific climate- and human demography dependent parameters determining the dynamics of the compartmental life stages. Those parameters are based on either laboratory experiment, such as the temperature-dependant mortality, or expert knowledge, such as the overwintering pattern.
+Each mosquito species has specific climate- and human demography dependent parameters determining the dynamics of the mosquito life cycle. Those parameters are based on either laboratory experiment, such as the temperature-dependant mortality, or expert knowledge, such as the overwintering pattern.
 
-Using this modeling approach, we are able to estimate the adult mosquito abundance in each cell of the 2 $\times$ 2 km grid. However, such model can only use variables explicitly linked to the mosquito life cycle. Some variables such as land-use patterns and elevation, which are known to significantly impact the species distribution, are difficult to implement in this framework.
+Using this approach, we are able to estimate the adult mosquito abundance in each cell of the 2 $\times$ 2 km grid. However, such model can only use variables explicitly linked to the mosquito life cycle. Some variables such as land-use patterns and elevation, which are known to significantly impact the species distribution, are difficult to implement in this framework.
 
-Neithertheless, the modelisation of the mosquito life stages also yields gridded estimates of egg abundance. The most common and scalable method for monitoring mosquito populations is precisely the recording of egg layed in traps. When available, this data allows to construct a statistical model which would correct for bias in the egg estimates and straightforwardly implement relevant variable. Combining the two methodology allows us to project refined egg abundance estimates over Switzerland, which therefore improves the gridded adult population estimates.
+Neithertheless, the modelisation of the mosquito life stages also yields gridded estimates of egg abundance. The most common and scalable method for monitoring mosquito populations is precisely the recording of the number of eggs layed in traps. When available, this data allows to construct a statistical model which would correct for bias in the egg estimates and straightforwardly implement relevant variable. Combining the two methodology allows us to project refined egg abundance estimates over Switzerland, which therefore improves the gridded adult population estimates.
 
 <p align="center">
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/26271975-738a-4aae-8754-fbd02487144b" width=400>
@@ -49,10 +49,10 @@ As the mosquito population model yields an estimate of the number of mosquitoes 
 <p align="center">
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/694ca8a9-d849-434e-8cc8-88f29959b9df" width=600>
   <br>
-  <em></em>
+  <em>Ross-macdonald transmission model of mosquito-borne diseases</em>
 </p>
 
-A ... of such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection in a fully susceptible population
+A critical metric based on such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection in a fully susceptible population. This value has interesting thresholding properties
 
 # Current state of the project
 
