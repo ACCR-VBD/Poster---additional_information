@@ -28,7 +28,7 @@ The demographic projection inputs consists of two models :
 The mosquito population model will primarily be based on a compartmental model of the different life stages of relevant mosquito, with parameters defining the dynamics of the compartment. Here is a diagram from ([Metelmann et al., 2019](https://royalsocietypublishing.org/doi/10.1098/rsif.2018.0761)) illustrating this concept for Aedes albopictus :
 
 <p align="center">
-  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/9f1dcf31-c9d3-4a22-9009-d66fc36b8ba1" width=600>
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/9f1dcf31-c9d3-4a22-9009-d66fc36b8ba1" width=800>
 </p>
 
 Each mosquito species has specific climate- and human demography dependent parameters determining the dynamics of the mosquito life cycle. Those parameters are based on either laboratory experiment, such as the temperature-dependant mortality, or expert knowledge, such as the overwintering pattern.
@@ -45,7 +45,7 @@ Neithertheless, the modelisation of the mosquito life stages also yields estimat
 
 ### Disease risk model
 
-As the mosquito population model yields an estimate of the number of mosquitoes likely to bite humans, and by adding human demographic projection, we are able to model the transmission dynamic of specific mosquito-borne diseases using the framework of epidemiological models, which divides each gridded population into compartment corresponding to different infectious status.
+As the mosquito population model yields an estimate of the number of mosquitoes likely to bite humans, and by adding human demographic projection, we are able to model the transmission dynamic of specific mosquito-borne diseases using the framework of epidemiological models, which divides each gridded population into compartment corresponding to different epidemiological status.
 
 <p align="center">
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/694ca8a9-d849-434e-8cc8-88f29959b9df" width=600>
@@ -53,10 +53,15 @@ As the mosquito population model yields an estimate of the number of mosquitoes 
   <em>Ross-macdonald transmission model of mosquito-borne diseases</em>
 </p>
 
-A crucial metric based on such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection in a fully susceptible population. This metric is computed through an equation based on several parameters of the epidemiological compartmental model, as in the following formula from the Ross-macdonald model :
+A crucial metric based on such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection in a fully susceptible population. This value has interesting thresholding properties:
+
+- If \($R_0$ > 1\), each infected individual, on average, infects more than one other person, leading to the potential for an epidemic.
+- If \($R_0$ < 1\), the disease will eventually die out as each infected individual, on average, infects less than one other person.
+
+This metric is computed through an equation based on several parameters of the epidemiological compartmental model, as in the following formula from the Ross-macdonald model :
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_0=\frac{M}{N}\times\frac{a(T)^2b(T)c(T)}{\mu(T)r}e^{-\mu(T)\times\text{EIP(T)}}">
+  <img src="https://latex.codecogs.com/svg.latex?\Large&space;R_0=\frac{M}{N}\times\frac{a^2bc}{\mu{r}}e^{-\mu\times\text{EIP}}">
 </p>
 
 Where:
@@ -65,17 +70,15 @@ Where:
 - \(a\) is the daily biting rate per mosquito,
 - \(b\) is the probability of disease transmission from an infectious mosquito to a susceptible human per bite,
 - \(c\) is the probability of disease transmission from an infectious human to a susceptible mosquito per bite,
-- \($\mu$\) is the per capita mortality rate of mosquitoes,
+- \($\mu$\) is the mortality rate of mosquitoes,
 - \(r\) is the recovery rate of humans.
 - \(EIP\) is the incubation period during which an infected mosquito becomes infectious.
-- T is the temperature
 
-This value has interesting thresholding properties:
+Many parameters of this equation are sensitive to temperature. To account for this effect, we can estimate the temperature dependence by fitting functional forms to reported controlled laboratory experiments measuring the parameter for different temperatures :
 
-1. If \($R_0$ > 1\), each infected individual, on average, infects more than one other person, leading to the potential for an epidemic.
-2. If \($R_0$ < 1\), the disease will eventually die out in the population because each infected individual, on average, infects less than one other person.
-
-The temperature dependance of the parameters of this equation can be estimated by 
+<p align="center">
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/465c9e79-aa53-4a29-ad57-fade566d1770">
+</p>
 
 # Current state of the project
 
