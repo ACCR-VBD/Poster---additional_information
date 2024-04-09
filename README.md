@@ -84,11 +84,12 @@ Using a bayesian framework allows to straightforwardly propagate the uncertainit
 
 <p align="center">
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/99d9994d-4635-442a-96ef-bd1288152fae", width =500>
-  <br>
-  <em>Estimated $R_0$ for the </em>
+  <br> 
+  <em>Temperature dependance of the basic reproduction number for <br> Aedes Aegypti mosquitoes transmitting dengue, estimated with arbitrary population values</em>
 </p>
 
-Finally, by combining the mean temperature, the estimated number of female mosquitoes and the estimated size of human population, we can model a probabilistic risk of mosquito-borne disease outbreaks in each cell of the 2 $\times$ 2 km grid and for each pair of mosquito species and disease studied.
+Finally, by combining the mean temperature, the estimated number of female mosquitoes and the estimated size of human population, we can use this framework to model a probabilistic risk of mosquito-borne disease outbreaks in each cell of the 2 $\times$ 2 km grid and for each pair of mosquito species and disease studied.
 
 # Current state of the project
 
+The project 
