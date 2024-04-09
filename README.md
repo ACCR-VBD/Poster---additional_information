@@ -4,7 +4,7 @@ The model consist of several entangled sections :
 
 <br>
 <p align="center">
-  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/5d770b36-a17b-4480-9000-7836701aba05" width=500 alt="Alternative text for image">
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/5d770b36-a17b-4480-9000-7836701aba05" width=500>
   <br>
   <em>Schematic representation of the different modules involved in the disease risk model</em>
 </p>
@@ -18,20 +18,21 @@ The demographic projection inputs consists of two models :
 
 -   A 1-km downscaling of a global scenario-based spatial projections for each of the five Shared Socio-economic Pathways (SSP) at 10-years interval from 2010 to 2100, obtained by downscaling national-level projections of urban and rural population change corresponding to each scenario to 1/8° using a gravity-type model parameterized to reflect the spatial patterns of change prescribed by each SSP ([Gao et al., 2017](https://opensky.ucar.edu/islandora/object/technotes:553))
 
--   1-km global spatial projections at 5-year intervals from 2020 to 2100, obtained by building a random forest model based notably on the WorldPop, Global Urban Land Use Change Product and country-level SSPs population projections datasets. [Wang et al., 2022](https://www.nature.com/articles/s41597-022-01675-x)
+-   1-km global spatial projections at 5-year intervals from 2020 to 2100, obtained by building a random forest model based notably on the WorldPop, Global Urban Land Use Change Product and country-level SSPs population projections datasets. ([Wang et al., 2022](https://www.nature.com/articles/s41597-022-01675-x))
 
 ### Land-use projection input
 
 ### Mosquito population model
 
-The mosquito population model will primarily be based on a compartmental model of the different life stages of relevant mosquito, with parameters defining the dynamics of the compartment. Here is a diagram illustrating this concept :
+The mosquito population model will primarily be based on a compartmental model of the different life stages of relevant mosquito, with parameters defining the dynamics of the compartment. Here is a diagram from ([Metelmann et al., 2019](https://royalsocietypublishing.org/doi/10.1098/rsif.2018.0761)) illustrating this concept :
 
 <p align="center">
-  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/9f1dcf31-c9d3-4a22-9009-d66fc36b8ba1" width=600 alt="Alternative text for image">
-  <br>
-  <em>Schematic representation of the different modules involved in the disease risk model</em>
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/9f1dcf31-c9d3-4a22-9009-d66fc36b8ba1" width=600>
 </p>
-    
+
+Each mosquito species has specific climate- and human demography dependent parameters for the 
+
+### Disease risk model
 
 # Current state of the project
 
