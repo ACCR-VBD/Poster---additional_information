@@ -37,19 +37,19 @@ We get ... this model can only use variable explicitly linked to the life cycle.
 Neithertheless, the modelisation of the life stages yields egg abundance estimates, and the most straightforward and scalable method for monitoring mosquito populations is precisely the recording of egg layed in traps. When available, this data allows us to construct a statistical model which would correct for bias in the egg estimates and straightforwardly implement relevant variable. Combining the two methodology allows us to project egg abundance, which allows to improve the gridded adult population estimates 
 
 <p align="center">
-  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/5d770b36-a17b-4480-9000-7836701aba05" width=500>
+  <img src= width=600>
   <br>
   <em>Schematic representation of the different modules involved in the disease risk model</em>
 </p>
 
 ### Disease risk model
 
-As the mosquito population model yields an estimate of the number of mosquitoes likely to bite humans, and by adding human demographic projection, we are able to model the transmision dynamic of specific mosquito-borne diseases using the framework of epidemiological models
+As the mosquito population model yields an estimate of the number of mosquitoes likely to bite humans, and by adding human demographic projection, we are able to model the transmission dynamic of specific mosquito-borne diseases using the framework of epidemiological models, which divides each gridded population into different compartment depending on their infection status
 
 <p align="center">
-  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/5d770b36-a17b-4480-9000-7836701aba05" width=500>
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/694ca8a9-d849-434e-8cc8-88f29959b9df" width=600>
   <br>
-  <em>Schematic representation of the different modules involved in the disease risk model</em>
+  <em></em>
 </p>
 
 # Current state of the project
