@@ -37,9 +37,9 @@ We get ... adult mosquito population. However, such model mostly uses variable e
 Neithertheless, the modelisation of the mosquito life stages yields gridded estimates of egg abundance. The most straightforward and scalable method for monitoring mosquito populations is precisely the recording of egg layed in traps. When available, this data allows us to construct a statistical model which would correct for bias in the egg estimates and straightforwardly implement relevant variable. Combining the two methodology allows us to project refined egg abundance estimates over Switzerland, which allows to improve the gridded adult population estimates 
 
 <p align="center">
-  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/26271975-738a-4aae-8754-fbd02487144b" width=600>
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/26271975-738a-4aae-8754-fbd02487144b" width=400>
   <br>
-  <em>Schematic representation of the different modules involved in the disease risk model</em>
+  <em>Classical ovitrap. This device is designed as a typical breeding site for the studied species. <br> Once installed on the field, the number of mosquito eggs is recorded every two weeks</em>
 </p>
 
 ### Disease risk model
