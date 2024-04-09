@@ -1,6 +1,7 @@
 # Overview of the disease risk model
+The overall objective of our research project is to develop a model that utilizes RCP-SSP scenarios as input to generate a probabilistic risk assessment of Dengue, Zika, and Chikungunya outbreaks driven by Aedes albopictus and Aedes aegypti. We aim to provide up to 2060 a daily estimate of outbreak potential, mapped on a 4 km² grid across     Switzerland.
 
-The model consist of several entangled sections :
+We plan to implement a framework consisting of several entangled sections :
 
 <br>
 <p align="center">
