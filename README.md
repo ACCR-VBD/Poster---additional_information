@@ -32,25 +32,27 @@ The mosquito population model will primarily be based on a compartmental model o
 
 Each species has specific climate- and human demography dependent parameters determining the ... life stages. Those parameters are based on either laboratory experiment, such as the temperature-dependant mortality, or expert knowledge, such as the overwintering pattern.
 
-We get ... adult mosquito population. However, such model mostly uses variable explicitly linked to the life cycle. Indeed, some variables such as land-use and elevation, which are known to significantly impact the species distribution, are difficult to implement in this framework.
+We get ... adult mosquito population over the 2 $\times$ 2 km grid. However, such model mostly uses variable explicitly linked to the life cycle. Some variables such as land-use and elevation, which are known to significantly impact the species distribution, are difficult to implement in this framework.
 
-Neithertheless, the modelisation of the mosquito life stages yields gridded estimates of egg abundance. The most straightforward and scalable method for monitoring mosquito populations is precisely the recording of egg layed in traps. When available, this data allows us to construct a statistical model which would correct for bias in the egg estimates and straightforwardly implement relevant variable. Combining the two methodology allows us to project refined egg abundance estimates over Switzerland, which allows to improve the gridded adult population estimates 
+Neithertheless, the modelisation of the mosquito life stages yields gridded estimates of egg abundance. The most straightforward and scalable method for monitoring mosquito populations is precisely the recording of egg layed in traps. When available, this data allows us to construct a statistical model which would correct for bias in the egg estimates and straightforwardly implement relevant variable. Combining the two methodology allows us to project refined egg abundance estimates over Switzerland, which allows to improve the gridded adult population estimates.
 
 <p align="center">
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/26271975-738a-4aae-8754-fbd02487144b" width=400>
   <br>
-  <em>Classical ovitrap. This device is designed as a typical breeding site for the studied species. <br> Once installed on the field, the number of mosquito eggs is recorded every two weeks</em>
+  <em>Classical ovitrap. This device is designed as a typical breeding site for the studied species. <br> Once installed on the field, the number of mosquito eggs is usually recorded every two weeks</em>
 </p>
 
 ### Disease risk model
 
-As the mosquito population model yields an estimate of the number of mosquitoes likely to bite humans, and by adding human demographic projection, we are able to model the transmission dynamic of specific mosquito-borne diseases using the framework of epidemiological models, which divides each gridded population into different compartment depending on their infection status
+As the mosquito population model yields an estimate of the number of mosquitoes likely to bite humans, and by adding human demographic projection, we are able to model the transmission dynamic of specific mosquito-borne diseases using the framework of epidemiological models, which divides each gridded population into different compartment depending on their infection status.
 
 <p align="center">
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/694ca8a9-d849-434e-8cc8-88f29959b9df" width=600>
   <br>
   <em></em>
 </p>
+
+A ... of such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection in a fully susceptible population
 
 # Current state of the project
 
