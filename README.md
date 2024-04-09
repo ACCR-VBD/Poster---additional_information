@@ -32,9 +32,9 @@ The mosquito population model will primarily be based on a compartmental model o
 
 Each mosquito species has specific climate- and human demography dependent parameters determining the dynamics of the mosquito life cycle. Those parameters are based on either laboratory experiment, such as the temperature-dependant mortality, or expert knowledge, such as the overwintering pattern.
 
-Using this approach, we are able to estimate the adult mosquito abundance in each cell of the 2 $\times$ 2 km grid. However, such model can only use variables explicitly linked to the mosquito life cycle. Some variables such as land-use patterns and elevation, which are known to significantly impact the species distribution, are difficult to implement in this framework.
+Using this approach, we are able to estimate the abundance of female adult mosquito in each cell of the 2 $\times$ 2 km grid. However, such model can only use variables explicitly linked to the mosquito life cycle. Some variables such as land-use patterns and elevation, which are known to significantly impact the species distribution, are difficult to implement in this framework.
 
-Neithertheless, the modelisation of the mosquito life stages also yields gridded estimates of egg abundance. The most common and scalable method for monitoring mosquito populations is precisely the recording of the number of eggs layed in traps. When available, this data allows to construct a statistical model which would correct for bias in the egg estimates and straightforwardly implement relevant variable. Combining the two methodology allows us to project refined egg abundance estimates over Switzerland, which therefore improves the gridded adult population estimates.
+Neithertheless, the modelisation of the mosquito life stages also yields estimates of egg abundance. The most common and scalable method for monitoring mosquito populations is precisely the recording of the number of eggs layed in traps. When available, this data allows to construct a statistical model which would correct for bias in the egg estimates and straightforwardly implement relevant variable. Combining the two methodology allows us to project refined egg abundance estimates over Switzerland, which therefore improves the gridded adult population estimates.
 
 <p align="center">
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/26271975-738a-4aae-8754-fbd02487144b" width=400>
@@ -52,7 +52,7 @@ As the mosquito population model yields an estimate of the number of mosquitoes 
   <em>Ross-macdonald transmission model of mosquito-borne diseases</em>
 </p>
 
-A critical metric based on such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection in a fully susceptible population. This value has interesting thresholding properties
+A critical metric based on such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection in a fully susceptible population. This value has interesting thresholding properties. Indeed, a $R_0$ under one theoretically ensures that infection events will not lead to a disease outbreak, as the number of new infections progressively dies out. This metric is computed through an equation based on several parameters of the epidemiological compartmental model
 
 # Current state of the project
 
