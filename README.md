@@ -45,7 +45,7 @@ Neithertheless, the modelisation of the mosquito life stages also yields estimat
 
 ### Disease risk model
 
-As the mosquito population model yields an estimate of the number of mosquitoes likely to bite humans, and by adding human demographic projection, we are able to model the transmission dynamic of specific mosquito-borne diseases using the framework of epidemiological models, which divides each gridded population into compartment corresponding to different epidemiological status.
+As the mosquito population model yields an estimate of the number of mosquitoes likely to bite humans, and by adding human demographic projection, we are able to model the transmission dynamic of specific mosquito-borne diseases using the framework of epidemiological models, which divides each gridded population into compartments corresponding to different epidemiological status.
 
 <p align="center">
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/694ca8a9-d849-434e-8cc8-88f29959b9df" width=600>
@@ -53,7 +53,7 @@ As the mosquito population model yields an estimate of the number of mosquitoes 
   <em>Ross-macdonald transmission model of mosquito-borne diseases</em>
 </p>
 
-A crucial metric based on such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection in a fully susceptible population. This value has interesting thresholding properties:
+A crucial metric based on such epidemiological model is the basic reproduction number $R_0$, which corresponds to the average number of secondary infection caused by a single infection event in a fully susceptible population. This value has interesting thresholding properties:
 
 - If \($R_0$ > 1\), each infected individual, on average, infects more than one other person, leading to the potential for an epidemic.
 - If \($R_0$ < 1\), the disease will eventually die out as each infected individual, on average, infects less than one other person.
@@ -77,8 +77,18 @@ Where:
 Many parameters of this equation are sensitive to temperature. To account for this effect, we can estimate the temperature dependence by fitting functional forms to reported controlled laboratory experiments measuring the parameter for different temperatures :
 
 <p align="center">
-  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/465c9e79-aa53-4a29-ad57-fade566d1770">
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/465c9e79-aa53-4a29-ad57-fade566d1770", width =500>
 </p>
+
+Using a bayesian framework allows to straightforwardly propagate the uncertainity of the parameters thermal dependency to the $R_0$ estimate, yielding an function relating the temperature with a confidence interval of $R_0$ :
+
+<p align="center">
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/99d9994d-4635-442a-96ef-bd1288152fae", width =500>
+  <br>
+  <em>Estimated $R_0$ for the </em>
+</p>
+
+Finally, by combining the mean temperature, the estimated number of female mosquitoes and the estimated size of human population, we can model a probabilistic risk of mosquito-borne disease outbreaks in each cell of the 2 $\times$ 2 km grid and for each pair of mosquito species and disease studied.
 
 # Current state of the project
 
