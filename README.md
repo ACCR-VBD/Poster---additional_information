@@ -30,9 +30,18 @@ The mosquito population model will primarily be based on a compartmental model o
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/9f1dcf31-c9d3-4a22-9009-d66fc36b8ba1" width=600>
 </p>
 
-Each mosquito species has specific climate- and human demography dependent parameters for the 
+Each species has specific climate- and human demography dependent parameters for the modelisation of the mosquito life cycle. Those parameters are based on either laboratory experiement, such as the temperature-dependant mortality, or expert knowledge, such as the overwintering pattern.
+
+However, this model
+
+Neithertheless, the modelisation of the life stages yields egg abundance estimates, and the most straightforward and scalable method for monitoring mosquito populations is precisely the recording of egg layed in traps. When available, this data allows us to construct a statistical model which straight
+
+
+combining the two methodology allows to project egg abundance, which allows to improve the gridded adult population estimates 
 
 ### Disease risk model
+
+As the mosquito population model 
 
 # Current state of the project
 
