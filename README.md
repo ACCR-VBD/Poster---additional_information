@@ -41,7 +41,7 @@ Neithertheless, the modelisation of the mosquito life stages also yields estimat
 <p align="center">
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/26271975-738a-4aae-8754-fbd02487144b" width=400>
   <br>
-  <em>Classical ovitrap. This device is designed as a typical breeding site for the studied species. <br> Once installed on the field, the number of mosquito eggs is usually recorded every two weeks</em>
+  <em>Classical ovitrap. This device is designed as a typical breeding site for the studied species. <br> Once installed on the field, the number of mosquito eggs is usually recorded every two weeks.</em>
 </p>
 
 ### Disease risk model
