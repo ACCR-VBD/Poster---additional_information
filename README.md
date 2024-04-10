@@ -1,4 +1,5 @@
 # Overview of the disease risk model
+
 The overall objective of our research project is to develop a model that utilizes RCP-SSP scenarios as input to generate a probabilistic risk assessment of Dengue, Zika, and Chikungunya outbreaks driven by Aedes albopictus and Aedes aegypti. We aim to provide up to 2060 a daily estimate of outbreak potential, mapped on a 4 km² grid across     Switzerland.
 
 We plan to implement a framework consisting of several entangled sections :
@@ -11,17 +12,17 @@ We plan to implement a framework consisting of several entangled sections :
 </p>
 
 ### Climate input
+
 The climate input is the DAILY-GRID CH2018 Dataset developed by MeteoSwiss. It consist of 68 regional climate models from the EURO-CORDEX ensemble, statisticaly downscaled by quantile mapping to a 2 $\times$ 2 km grid over Switzerland from 1981 to 2099. 31 model correspond to the Representative Concentration Pathway (RCP) 8.5, 25 to RCP4.5, and 12 to RCP2.6. Each of those 68 models provides daily precipitation and maximum, mean and minimum temperature estimates ([CH2018, MeteoSwiss](https://www.nccs.admin.ch/nccs/en/home/the-nccs/priority-themes/ch2018-climate-scenarios.html)). All the spatial data input and output will be aligned with this 2 $\times$ 2 km grid.
 
 
 ### Demographic projection input
+
 The demographic projection inputs consists of two models : 
 
 -   A 1-km downscaling of a global scenario-based spatial projections for each of the five Shared Socio-economic Pathways (SSP) at 10-years interval from 2010 to 2100, obtained by downscaling national-level projections of urban and rural population change corresponding to each scenario to 1/8° using a gravity-type model parameterized to reflect the spatial patterns of change prescribed by each SSP ([Gao et al., 2017](https://opensky.ucar.edu/islandora/object/technotes:553))
 
 -   1-km global spatial projections at 5-year intervals from 2020 to 2100, obtained by building a random forest model based notably on the WorldPop, Global Urban Land Use Change Product and country-level SSPs population projections datasets. ([Wang et al., 2022](https://www.nature.com/articles/s41597-022-01675-x))
-
-### Land-use projection input
 
 ### Mosquito population model
 
@@ -80,16 +81,12 @@ Many parameters of this equation are sensitive to temperature. To account for th
   <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/465c9e79-aa53-4a29-ad57-fade566d1770", width =500>
 </p>
 
-Using a bayesian framework allows to straightforwardly propagate the uncertainity of the parameters thermal dependency to the $R_0$ estimate, yielding an function relating the temperature with a confidence interval of $R_0$ :
+Using a bayesian framework allows to straightforwardly propagate the uncertainity of the parameters thermal dependency to the $R_0$ estimate, yielding a function relating the temperature with a confidence interval of $R_0$ :
 
 <p align="center">
-  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/99d9994d-4635-442a-96ef-bd1288152fae", width =500>
+  <img src="https://github.com/ACCR-VBD/Presentation---Swiss-global-change-day/assets/63344790/99d9994d-4635-442a-96ef-bd1288152fae", width =400>
   <br> 
   <em>Temperature dependance of the basic reproduction number for <br> Aedes Aegypti mosquitoes transmitting dengue, estimated with arbitrary population values</em>
 </p>
 
 Finally, by combining the mean temperature, the estimated number of female mosquitoes and the estimated size of human population, we can use this framework to model a probabilistic risk of mosquito-borne disease outbreaks in each cell of the 2 $\times$ 2 km grid and for each pair of mosquito species and disease studied.
-
-# Current state of the project
-
-The project 
